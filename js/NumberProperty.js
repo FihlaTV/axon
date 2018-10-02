@@ -69,7 +69,7 @@ define( function( require ) {
    * @returns {boolean}
    */
   function isValidRange( range ) {
-    return ( typeof range === 'object' ) && range.hasOwnProperty( 'min' ) && range.hasOwnProperty( 'max' );
+    return ( typeof range === 'object' ) && range.hasOwnProperty( '_min' ) && range.hasOwnProperty( '_max' );
   }
 
   return inherit( Property, NumberProperty, {
